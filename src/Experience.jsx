@@ -45,10 +45,10 @@ export default function Experience() {
     portalMaterial.current.uTime += delta;
   });
 
-  const { nodes } = useGLTF("./personelFiles/portalScenev.glb");
+  const { nodes } = useGLTF("./model/portalScene.glb");
   console.log(nodes);
-  const bakedTexture = useTexture("./personelFiles/modelBaked.jpg");
-  const floorBakedTexture = useTexture("./personelFiles/floorBaked.jpg");
+  const bakedTexture = useTexture("./model/modelBaked.jpg");
+  const floorBakedTexture = useTexture("./model/floorBaked.jpg");
   bakedTexture.flipY = false;
 
   return (
